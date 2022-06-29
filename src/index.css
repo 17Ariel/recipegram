@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .filter-cuisine {
+    @apply h-12 w-24 bg-red-400 text-white rounded-md shadow p-2;
+  }
+  .active-btn {
+    @apply h-12 w-28 bg-red-400 text-white rounded-md shadow p-2 border border-red-400;
+  }
+  .btn {
+    @apply h-12 w-28 text-red-400 bg-white rounded-md shadow p-2 border border-red-400;
+  }
+}
