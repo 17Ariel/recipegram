@@ -24,9 +24,4 @@ npm run dev
 
 ```
 
-### Run the frontend
 
-```
-npm start
-
-```
