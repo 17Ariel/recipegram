@@ -14,6 +14,7 @@ module.exports = {
       },
       height: {
         custom: "80vh",
+        norecipe: "42.8vh",
       },
       minHeight: {
         custom: "80vh",
