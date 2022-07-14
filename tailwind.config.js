@@ -15,6 +15,8 @@ module.exports = {
       height: {
         custom: "80vh",
         norecipe: "42.8vh",
+        nav: "10vh",
+        90: "90vh",
       },
       minHeight: {
         custom: "80vh",

@@ -6,12 +6,12 @@
 
 @layer base {
   .filter-cuisine {
-    @apply h-12 w-24 bg-red-400 text-white rounded-md shadow p-2;
+    @apply h-10 w-20 bg-green-800 text-white rounded-xl shadow p-2;
   }
   .active-btn {
-    @apply h-12 w-28 bg-red-400 text-white rounded-md shadow p-2 border border-red-400;
+    @apply h-12 w-28 bg-green-800 text-white rounded-xl shadow p-2 border border-green-800;
   }
   .btn {
-    @apply h-12 w-28 text-red-400 bg-white rounded-md shadow p-2 border border-red-400;
+    @apply h-12 w-28 text-green-800 bg-white rounded-xl shadow p-2 border border-green-800;
   }
 }
