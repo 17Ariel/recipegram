@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Recipe = ({ recipes }) => {
-  return (
+  return !recipes ? (
+    ""
+  ) : (
     <div className="flex flex-wrap justify-center items-center gap-4 mb-16">
       {recipes.map((recipe) => (
         <div

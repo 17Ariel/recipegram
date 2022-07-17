@@ -21,6 +21,9 @@ module.exports = {
       minHeight: {
         custom: "80vh",
       },
+      spacing: {
+        nav: "10vh",
+      },
     },
   },
   plugins: [],

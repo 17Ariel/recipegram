@@ -7,7 +7,6 @@ import { useParams } from "react-router-dom";
 const Recipes = () => {
   const { id } = useParams();
   const [data, setdata] = useState([]);
-  const [show, setshow] = useState("prev");
   useEffect(() => {
     const getRecipes = async () => {
       const api = import.meta.env.VITE_API_KEY;
