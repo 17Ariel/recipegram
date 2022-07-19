@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCutlery, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCutlery,
+  faBars,
+  faMoon,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const menu = useRef();
@@ -17,12 +22,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-center gap-24 sm:gap-44 md:gap-72 lg:gap-96 xl:gap-96 xxl:gap-96 items-center h-nav w-full bg-white shadow text-green-800 sticky top-0">
-        <h1 className="text-xl">
+      <nav className="flex dark:bg-slate-800 dark:text-white justify-center gap-24 sm:gap-40 md:gap-44 lg:gap-48 xl:gap-96 xxl:gap-96 items-center h-nav w-full bg-white shadow text-black sticky top-0">
+        <h1 className="text-xl text-green-800">
           <FontAwesomeIcon icon={faCutlery} />
           <span className="ml-1">Recipegram</span>
         </h1>
-        <ul className="hidden sm:flex md:flex lg:flex xl:flex xxl:flex justify-center items-center gap-6 sm:gap-12 md:gap-14 lg:gap-14 xl:gap-16 xxl:gap-16">
+        <ul className="hidden sm:hidden md:flex lg:flex xl:flex xxl:flex justify-center items-center gap-6 sm:gap-8 md:gap-14 lg:gap-14 xl:gap-16 xxl:gap-16">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -47,13 +52,13 @@ const Navbar = () => {
         </ul>
         <FontAwesomeIcon
           icon={faBars}
-          className="text-green-800 cursor-pointer font-bold text-xl flex sm:hidden md:hidden lg:hidden xl:hidden xxl:hidden"
+          className="text-green-800 cursor-pointer font-bold text-xl flex sm:flex md:hidden lg:hidden xl:hidden xxl:hidden"
           onClick={togglemenu}
         />
       </nav>
       <ul
         ref={menu}
-        className="hidden transition-all duration-300 ease-in sticky top-nav gap-4 cursor-pointer justify-center items-center sm:hidden md:hidden lg:hidden xl:hidden xxl:hidden flex-col w-full h-36 bg-white shadow">
+        className="hidden transition-all duration-300 ease-in sticky top-nav gap-4 cursor-pointer justify-center items-center md:hidden lg:hidden xl:hidden xxl:hidden flex-col w-full h-40 bg-white shadow">
         <NavLink
           to="/"
           onClick={togglemenu}
